@@ -4,14 +4,14 @@ const { PrismaClient } = require("@prisma/client");
 Seed data is used to populate the database with initial data.
 */
 //Menu Items
-const moduleData = require("../initial-data/system_Modules_Enabled.json");
+const moduleData = require("../../initial-data/system_Modules_Enabled.json");
 //GPT Models
-const gptModelsData = require("../initial-data/gpt_Models.json");
+const gptModelsData = require("../../initial-data/gpt_Models.json");
 //CRM
-const crmOpportunityTypeData = require("../initial-data/crm_Opportunities_Type.json");
-const crmOpportunitySaleStagesData = require("../initial-data/crm_Opportunities_Sales_Stages.json");
-const crmCampaignsData = require("../initial-data/crm_campaigns.json");
-const crmIndustryTypeData = require("../initial-data/crm_Industry_Type.json");
+const crmOpportunityTypeData = require("../../initial-data/crm_Opportunities_Type.json");
+const crmOpportunitySaleStagesData = require("../../initial-data/crm_Opportunities_Sales_Stages.json");
+const crmCampaignsData = require("../../initial-data/crm_campaigns.json");
+const crmIndustryTypeData = require("../../initial-data/crm_Industry_Type.json");
 
 const prisma = new PrismaClient();
 
