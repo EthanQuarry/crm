@@ -99,7 +99,7 @@ export const authOptions: NextAuthOptions = {
               is_account_admin: false,
               lastLoginAt: new Date(),              
               userStatus:
-                process.env.NEXT_PUBLIC_APP_URL != "https://demo.saashq.org"
+                process.env.NEXT_PUBLIC_APP_URL === "localhost:3000"
                   ? "ACTIVE"
                   : "PENDING",
             },

@@ -27,7 +27,7 @@ export async function POST(req: Request) {
     await resend.emails.send({
       from:
         process.env.NEXT_PUBLIC_APP_NAME + " <" + process.env.EMAIL_FROM + ">",
-      to: "saashqdev@gmail.com",
+      to: "dev.ethanquarry@gmail.com",
       subject: "New Feedback from: " + process.env.NEXT_PUBLIC_APP_URL,
       text: feedback, // Add this line to fix the types issue
     });
